@@ -2,300 +2,305 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yunho Kwak - CV / Academic Profile</title>
+  <title>Yunho Kwak - Curriculum Vitae</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    /* 전체 페이지 배경 (종이 위에 얹힌 느낌용) */
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f5f5f5;
-      color: #222;
+      padding: 24px 0;
+      background-color: #e9e9e9;
+      font-family: "Times New Roman", "TimesNewRoman", Times, serif;
+      color: #000;
     }
-    .container {
-      max-width: 900px;
+
+    /* 실제 이력서 종이 영역 */
+    .page {
+      max-width: 800px;
       margin: 0 auto;
-      padding: 24px 16px 40px;
-      background-color: #fff;
+      background-color: #ffffff;
+      padding: 32px 40px 40px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
-    header {
+
+    /* 상단 이름 + 연락처 */
+    .header {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
+      flex-wrap: wrap;
       align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 24px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 16px;
+      margin-bottom: 18px;
     }
+
+    .name-block {
+      margin-bottom: 8px;
+    }
+
     .name-block h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
     }
-    .name-block h2 {
-      margin: 4px 0 0;
-      font-size: 1rem;
-      font-weight: normal;
-      color: #555;
-    }
-    .contact {
-      font-size: 0.9rem;
+
+    .contact-block {
+      font-size: 12px;
       text-align: right;
+      line-height: 1.4;
     }
-    .contact div {
-      margin-bottom: 2px;
-    }
-    .contact a {
-      color: #0066cc;
+
+    .contact-block a {
+      color: inherit;
       text-decoration: none;
     }
-    .contact a:hover {
+
+    .contact-block a:hover {
       text-decoration: underline;
     }
-    h3.section-title {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
-      margin-top: 28px;
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-      letter-spacing: 0.03em;
+
+    /* 섹션 제목 (EDUCATION, RESEARCH PROJECTS, …) */
+    .section-title {
+      margin-top: 18px;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #444;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
     }
+
+    /* 섹션 안 각 항목 */
     .item {
-      margin-bottom: 14px;
+      font-size: 12px;
+      margin-bottom: 8px;
     }
-    .item-title {
-      font-weight: 600;
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 1px;
     }
+
+    .item-left {
+      font-weight: 700;
+    }
+
+    .item-right {
+      font-style: italic;
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+
     .item-sub {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .item-period {
-      font-size: 0.85rem;
-      color: #777;
       font-style: italic;
     }
+
+    .item-location {
+      font-style: italic;
+      white-space: nowrap;
+    }
+
+    .item-body {
+      margin-top: 2px;
+    }
+
+    .item-body p {
+      margin: 0 0 2px 0;
+    }
+
     ul {
-      margin: 4px 0 0 18px;
+      margin: 0 0 2px 16px;
       padding: 0;
     }
+
     li {
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
-    .tag-list {
-      font-size: 0.85rem;
-      color: #555;
+
+    /* 마지막 하단 여백 */
+    .bottom-space {
+      height: 8px;
     }
-    .tag-list span {
-      background: #e8e8e8;
-      padding: 3px 7px;
-      border-radius: 999px;
-      margin-right: 4px;
-      display: inline-block;
-      margin-top: 4px;
-    }
-    footer {
-      margin-top: 32px;
-      font-size: 0.8rem;
-      color: #777;
-      text-align: center;
-    }
+
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
+      .page {
+        padding: 24px 16px 28px;
       }
-      .contact {
+      .contact-block {
         text-align: left;
+        margin-top: 8px;
+      }
+      .item-header {
+        flex-direction: column;
+      }
+      .item-right,
+      .item-location {
+        margin-left: 0;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="page">
     <!-- HEADER -->
-    <header>
+    <div class="header">
       <div class="name-block">
         <h1>Yunho Kwak</h1>
-        <h2>MA Student in International Agriculture Technology<br />Seoul National University</h2>
       </div>
-      <div class="contact">
+      <div class="contact-block">
         <div>#102-405, 1447, Pyeongchang-daero</div>
         <div>Pyeongchang, Gangwon-do, Republic of Korea</div>
-        <div>Phone: <a href="tel:+821026296237">(+82) 10-2629-6237</a></div>
-        <div>Email: <a href="mailto:yunho.kwak@snu.ac.kr">yunho.kwak@snu.ac.kr</a></div>
-        <div>GitHub: <a href="https://github.com/your-github" target="_blank">your-github</a></div>
+        <div>(+82) 10-2629-6237</div>
+        <div><a href="mailto:yunho.kwak@snu.ac.kr">yunho.kwak@snu.ac.kr</a></div>
       </div>
-    </header>
-
-    <!-- SHORT INTRO -->
-    <p>
-      I am a graduate student in International Agriculture Technology with a focus on applied data science
-      and international agricultural development. My research interests include the commercialization of
-      drought-tolerant biotech soybeans, estimation of demand in school meal programs, and the design of
-      survey-based methods to measure willingness to pay and policy effectiveness in emerging markets.
-    </p>
+    </div>
 
     <!-- EDUCATION -->
-    <h3 class="section-title">Education</h3>
+    <div class="section-title">Education</div>
 
     <div class="item">
-      <div class="item-title">MA in International Agriculture Technology, Applied Data Science</div>
-      <div class="item-sub">Seoul National University, Institutes of Green Bio Science & Technology, Pyeongchang, South Korea</div>
-      <div class="item-period">Sep. 2024 – Present &nbsp; | &nbsp; GPA: 4.11 / 4.5</div>
-      <ul>
-        <li>Lecture Assistant to Professor Taeyoon Kim.</li>
-        <li>
-          Relevant coursework: Methods and Applications in Economic Research, International Agricultural Trade
-          and Development, Applied Microeconomics, Econometrics, Experimental Method for Measuring Effectiveness of Aid.
-        </li>
-      </ul>
+      <div class="item-header">
+        <div class="item-left">Seoul National University</div>
+        <div class="item-location">Pyeongchang, South Korea</div>
+      </div>
+      <div class="item-body">
+        <p><span class="item-sub">MA in International Agriculture Technology, Applied Data Science</span></p>
+        <p>Sep. 2024 – Present &nbsp;&nbsp;|&nbsp;&nbsp; GPA: 4.11 / 4.5</p>
+        <p>Activities: Lecture Assistant to Professor Taeyoon Kim</p>
+        <p>Relevant Coursework: Methods and Applications in Economic Research; International Agricultural Trade and Development; Applied Microeconomics; Econometrics; Experimental Method for Measuring Effectiveness of Aid.</p>
+      </div>
     </div>
 
     <div class="item">
-      <div class="item-title">BA in Russian</div>
-      <div class="item-sub">Hankuk University of Foreign Studies (HUFS), Seoul, South Korea</div>
-      <div class="item-period">Feb. 2020 &nbsp; | &nbsp; GPA: 4.04 / 4.5</div>
-      <ul>
-        <li>Study Abroad: Saint Petersburg State University, Russia.</li>
-      </ul>
+      <div class="item-header">
+        <div class="item-left">Military Service, Republic of Korea Army, First Lieutenant</div>
+        <div class="item-right">2020 – Jul. 2023</div>
+      </div>
     </div>
 
     <div class="item">
-      <div class="item-title">Military Service</div>
-      <div class="item-sub">Republic of Korea Army, First Lieutenant</div>
-      <div class="item-period">2020 – Jul. 2023</div>
+      <div class="item-header">
+        <div class="item-left">Hankuk University of Foreign Studies (HUFS)</div>
+        <div class="item-location">Seoul, South Korea</div>
+      </div>
+      <div class="item-body">
+        <p><span class="item-sub">BA in Russian</span></p>
+        <p>Feb. 2020 &nbsp;&nbsp;|&nbsp;&nbsp; GPA: 4.04 / 4.5</p>
+        <p>Study Abroad: Saint Petersburg State University, Russia</p>
+      </div>
     </div>
 
     <!-- RESEARCH PROJECTS -->
-    <h3 class="section-title">Research Projects</h3>
+    <div class="section-title">Research Projects</div>
 
     <div class="item">
-      <div class="item-title">Drought Tolerant Biotech Soybean for Overseas Expansion</div>
-      <div class="item-sub">Assistant Researcher</div>
-      <div class="item-period">Jan. 2025 – Present</div>
-      <ul>
-        <li>
-          Developing comprehensive global marketing strategy reports for drought-resistant genetically engineered (GE)
-          soybeans, identifying key stakeholders across target international markets, and analyzing regulatory landscapes
-          for biotechnology crop commercialization.
-        </li>
-      </ul>
+      <div class="item-header">
+        <div class="item-left">Drought Tolerant Biotech Soybean for Overseas Expansion</div>
+        <div class="item-right">Jan. 2025 – Present</div>
+      </div>
+      <div class="item-body">
+        <p><span class="item-sub">Assistant Researcher</span></p>
+        <p>
+          Developing comprehensive global marketing strategy reports for drought-resistant
+          genetically engineered (GE) soybeans, identifying key stakeholders across target international
+          markets, and analyzing regulatory landscapes for biotechnology crop commercialization.
+        </p>
+      </div>
     </div>
 
     <div class="item">
-      <div class="item-title">Estimation of Milk Demand in WFP School Meal Program in Laos</div>
-      <div class="item-sub">Assistant Researcher</div>
-      <div class="item-period">Mar. 2025 – Aug. 2025</div>
-      <ul>
-        <li>
-          Co-authored detailed analytical reports (up to 70 pages) incorporating quantitative surveys, stakeholder
-          interviews, and on-site investigations.
-        </li>
-        <li>
-          Applied econometric analysis, behavioral economics, and cross-cultural fieldwork to assess economic outcomes
-          and policy effectiveness for government and international organization initiatives.
-        </li>
-      </ul>
+      <div class="item-header">
+        <div class="item-left">Estimation of Milk Demand in WFP School Meal Program in Laos</div>
+        <div class="item-right">Mar. – Aug. 2025</div>
+      </div>
+      <div class="item-body">
+        <p><span class="item-sub">Assistant Researcher</span></p>
+        <p>
+          Co-authored detailed analytical reports (up to 70 pages), incorporating quantitative surveys,
+          stakeholder interviews, and on-site investigations. Applied expertise in econometric analysis,
+          behavioral economics, and cross-cultural fieldwork to assess economic outcomes and policy
+          effectiveness for government and international organization initiatives.
+        </p>
+      </div>
     </div>
 
     <!-- RESEARCH EXPERIENCE -->
-    <h3 class="section-title">Research Experience</h3>
+    <div class="section-title">Research Experience</div>
 
     <div class="item">
-      <div class="item-title">
-        Institutes of Green Bio Science & Technology, Seoul National University – Center of International Agriculture Development
+      <div class="item-header">
+        <div class="item-left">
+          Institutes of Green Bio Science & Technology, Seoul National University
+        </div>
+        <div class="item-location">Pyeongchang, South Korea</div>
       </div>
-      <div class="item-sub">Assistant Researcher</div>
-      <div class="item-period">Sep. 2025 – Present</div>
-      <ul>
-        <li>
-          Developing a Vietnam market entry strategy report for drought-resistant GE soybeans in collaboration with the
-          Lasemia Institute.
-        </li>
-        <li>
-          Planning collaboration with Vietnam National University of Agriculture (VNUA) to design and implement
-          willingness-to-pay surveys targeting Vietnamese consumers regarding GM, GE, and non-GMO soybean products.
-        </li>
-      </ul>
+      <div class="item-body">
+        <p><span class="item-sub">Assistant Researcher (Center of International Agriculture Development)</span></p>
+        <p>Sep. 2025 – Present</p>
+        <p>
+          Developing a Vietnam market entry strategy report for drought-resistant genetically engineered (GE)
+          soybeans in collaboration with Lasemia Institute. Planning collaboration with Vietnam National
+          University of Agriculture (VNUA) to design and implement willingness-to-pay surveys targeting
+          Vietnamese consumers regarding GM, GE, and non-GMO soybean products.
+        </p>
+      </div>
     </div>
 
     <div class="item">
-      <div class="item-title">Korea Institute for Development Strategies</div>
-      <div class="item-sub">Researcher, Center of International Agriculture Development</div>
-      <div class="item-period">Feb. 2024 – Aug. 2024</div>
-      <ul>
-        <li>
-          Managed project operations for KOICA (Korea International Cooperation Agency) initiatives, particularly the
-          “Empowering Rural Communities in Nepal” project.
-        </li>
-        <li>
-          Contributed to a detailed report on constructing an agricultural product collection center and standardizing
-          produce in Manekarka, Nepal, which was subsequently published in local media.
-        </li>
-        <li>
-          Prepared monthly reports on Southeast Asian agricultural policies and international development.
-        </li>
-      </ul>
+      <div class="item-header">
+        <div class="item-left">Korea Institute for Development Strategies</div>
+        <div class="item-location">Seoul, South Korea</div>
+      </div>
+      <div class="item-body">
+        <p><span class="item-sub">Researcher (Center of International Agriculture Development)</span></p>
+        <p>Feb. – Aug. 2024</p>
+        <p>
+          Managed project operations for KOICA (Korea International Cooperation Agency) initiatives,
+          particularly the “Empowering Rural Communities in Nepal” project. Contributed to a detailed report
+          on constructing an agricultural product collection center and standardizing produce in Manekarka,
+          Nepal, which was subsequently published in local media. Prepared monthly reports on Southeast
+          Asian agricultural policies and international development.
+        </p>
+      </div>
     </div>
 
-    <!-- AWARDS -->
-    <h3 class="section-title">Awards & Honors</h3>
+    <!-- AWARDS AND HONORS -->
+    <div class="section-title">Awards and Honors</div>
 
     <div class="item">
-      <ul>
-        <li>College of Agriculture and Life Sciences (CALS) Interdisciplinary Research Scholarship – 2025 Spring–Fall</li>
-        <li>Lecture &amp; Research Scholarship – 2025 Spring</li>
-        <li>Merit Based Scholarship – 2019 Spring, 2018 Fall, 2017 Fall, 2016 Fall</li>
-        <li>Mentoring &amp; Student Assistance Scholarship – 2019 Fall, 2017 Fall</li>
-      </ul>
+      <div class="item-body">
+        <p>College of Agriculture and Life Sciences (CALS) Interdisciplinary Research Scholarship &mdash; 2025 Spring–Fall</p>
+        <p>Lecture &amp; Research Scholarship &mdash; 2025 Spring</p>
+        <p>Merit Based Scholarship &mdash; 2019 Spring, 2018 Fall, 2017 Fall, 2016 Fall</p>
+        <p>Mentoring &amp; Student Assistance Scholarship &mdash; 2019 Fall, 2017 Fall</p>
+      </div>
     </div>
 
-    <!-- SKILLS & LANGUAGES -->
-    <h3 class="section-title">Skills & Languages</h3>
+    <!-- ADDITIONAL INFORMATION -->
+    <div class="section-title">Additional Information</div>
 
     <div class="item">
-      <div class="item-title">Languages</div>
-      <ul>
-        <li>Korean (Native)</li>
-        <li>English (Fluent)</li>
-        <li>Russian (Intermediate)</li>
-      </ul>
+      <div class="item-body">
+        <p><strong>Languages:</strong> Korean (Native), English (Fluent), Russian (Intermediate)</p>
+        <p><strong>Technical Skills:</strong> Microsoft Office, R, SAS, STATA</p>
+      </div>
     </div>
 
+    <!-- CV PDF LINK (선택) -->
     <div class="item">
-      <div class="item-title">Technical Skills</div>
-      <ul>
-        <li>Microsoft Office</li>
-        <li>R, SAS, STATA</li>
-      </ul>
+      <div class="item-body">
+        <p>
+          Full CV (PDF) download:
+          <a href="cv.pdf" target="_blank">cv.pdf</a>
+          (Upload a file named <code>cv.pdf</code> to this repository.)
+        </p>
+      </div>
     </div>
 
-    <!-- RESEARCH INTERESTS TAGS -->
-    <h3 class="section-title">Research Interests</h3>
-    <div class="tag-list">
-      <span>Agricultural development</span>
-      <span>Biotech / GE soybeans</span>
-      <span>Demand estimation</span>
-      <span>School meal programs</span>
-      <span>Willingness-to-pay surveys</span>
-      <span>International development</span>
-    </div>
-
-    <!-- CV / RESUME LINK -->
-    <h3 class="section-title">CV / Resume</h3>
-    <p>
-      You can download my full CV here:
-      <a href="cv.pdf" target="_blank">Download CV (PDF)</a><br />
-      (Upload a file named <code>cv.pdf</code> to this GitHub repository.)
-    </p>
-
-    <footer>
-      Last updated: 2025.11 · Built with GitHub Pages
-    </footer>
+    <div class="bottom-space"></div>
   </div>
 </body>
 </html>
