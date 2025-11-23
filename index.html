@@ -1,1 +1,185 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name - CV / Academic Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 16px;
+    }
+    .name-block h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .name-block h2 {
+      margin: 4px 0 0;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #555;
+    }
+    .contact {
+      font-size: 0.9rem;
+      text-align: right;
+    }
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    h3.section-title {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #444;
+    }
+    .item { margin-bottom: 12px; }
+    .item-title { font-weight: 600; }
+    .item-sub {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .item-period {
+      font-size: 0.85rem;
+      color: #777;
+      font-style: italic;
+    }
+    ul {
+      margin: 4px 0 0 18px;
+      padding: 0;
+    }
+    li { margin-bottom: 3px; }
+    .tag-list {
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .tag-list span {
+      background: #e8e8e8;
+      padding: 3px 7px;
+      border-radius: 999px;
+      margin-right: 4px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+    footer {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: #777;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="name-block">
+        <h1>Your Name</h1>
+        <h2>Ph.D. Candidate in Agricultural Economics<br/>Seoul National University</h2>
+      </div>
+      <div class="contact">
+        <div>Email: <a href="mailto:you@example.com">you@example.com</a></div>
+        <div>GitHub: <a href="https://github.com/your-github" target="_blank">your-github</a></div>
+        <div>Location: Hanoi / Seoul</div>
+      </div>
+    </header>
+
+    <!-- SHORT INTRO -->
+    <p>
+      I am a researcher focusing on agricultural economics, consumer behavior, and food policy,
+      with a particular interest in school milk programs and consumer acceptance of gene-edited (GE) foods
+      in Southeast Asia.
+    </p>
+
+    <!-- EDUCATION -->
+    <h3 class="section-title">Education</h3>
+    <div class="item">
+      <div class="item-title">Ph.D. in Agricultural Economics (in progress)</div>
+      <div class="item-sub">Graduate School of International Agricultural Technology, Seoul National University</div>
+      <div class="item-period">20XX – Present</div>
+    </div>
+
+    <!-- RESEARCH INTERESTS -->
+    <h3 class="section-title">Research Interests</h3>
+    <div class="tag-list">
+      <span>Consumer behavior</span>
+      <span>Gene-edited foods</span>
+      <span>School milk programs</span>
+      <span>Discrete choice experiments</span>
+      <span>Food policy in Southeast Asia</span>
+    </div>
+
+    <!-- PUBLICATIONS / PROJECTS -->
+    <h3 class="section-title">Publications & Projects</h3>
+    <div class="item">
+      <div class="item-title">Assessing demand and willingness to pay for school milk in Laos</div>
+      <div class="item-sub">Working paper</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Consumer attitudes toward gene-edited soy milk in Vietnam</div>
+      <div class="item-sub">In preparation</div>
+    </div>
+
+    <!-- SKILLS -->
+    <h3 class="section-title">Skills</h3>
+    <ul>
+      <li>Methods: Discrete choice experiments, contingent valuation, survey design</li>
+      <li>Software: R, Stata, LaTeX, SurveyCTO</li>
+      <li>Languages: Korean (native), English, Vietnamese (basic)</li>
+    </ul>
+
+    <!-- KOREAN SECTION -->
+    <h3 class="section-title">소개 (Korean)</h3>
+    <p>
+      저는 서울대학교 GSIAT에서 농업경제학을 전공하고 있으며,
+      라오스 학교 우유급식 프로그램과 베트남 소비자의 유전자편집식품(GE)에 대한
+      수용성을 연구하고 있습니다.
+    </p>
+
+    <!-- CV LINK -->
+    <h3 class="section-title">CV</h3>
+    <p>
+      Full CV (PDF):
+      <a href="cv.pdf" target="_blank">Download here</a>
+    </p>
+
+    <footer>
+      Last updated: 2025.11 · Built with GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
+
